@@ -42,7 +42,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-The merge happened with no problems and the contnents of top_N were placed into the test branch. There wasn't a merge conflict for me.
+The merge happened with no problems and the contents of top_N were placed into the test branch. There wasn't a merge conflict for me.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
