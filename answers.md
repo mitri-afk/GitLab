@@ -42,6 +42,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+The merge happened with no problems and the contnents of top_N were placed into the test branch. There wasn't a merge conflict for me.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -49,6 +50,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+There was a merge conflict when trying to get this to happen. However, the top_ten branch should have recieved the contents of test had there been no conflict. So no change happened to either branch in this case as we didn't resolve the conflict.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -57,3 +59,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+Test got all the contents of top_ten and top_N. However to get there, we had to deal with a a merge conflcit when running the command "git rebase top_N". We resovled that issue by editing the top_N file and adding that version of process_movie_data.py to our git commit. Then we ran "git rebase --continue" to finish.
